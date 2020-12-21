@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;900&display=swap');
+html{
+    font-family: 'Source Code Pro';
+}
+
+.page-header{
+    display: inline-grid;
+    font: 700 2em/1 'Source Code Pro', monospace;
+    grid-template-columns: auto;
+    height: 50px;
+}
+
+.nav-toggle{
+    background-color: white;
+    color: black;
+    
+}
