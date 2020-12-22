@@ -13,7 +13,7 @@ font-size: 1em;}
     border: 0.1em solid black;
     display: grid;
     grid-template-columns: 10% 55% 25% 10%;
-    font: 600 1.5em/1 'Source Code Pro';
+    font: 400 1.5em/1 'Source Code Pro';
     grid-template-rows: 4em;
 }
 /* 
@@ -90,7 +90,7 @@ grid-column: 1/5;
 grid-row: 1;
 text-align: center;
 font-size: large;
-font-weight: bolder;
+font-weight: 900;
 border:0.1em solid black;
 /* background-image: linear-gradient(to bottom right, #9da7fd, #b2e9c4); */
 background-color: #9da7fd;}
@@ -154,7 +154,7 @@ justify-content: flex-end;
 .textcard1{grid-column: 2; grid-row: 2;background-color: #ffbd37;}
 .text1{
     color:black;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 2.5em;
     text-align:right;
     padding-top: 8em;
@@ -166,7 +166,7 @@ justify-content: flex-end;
 background-color: #fc7b61;}
 .text2{
     color:black;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 3em;
     text-align:left;
     padding-top: 6em;
@@ -174,7 +174,7 @@ background-color: #fc7b61;}
 .textcard3{grid-column: 2; grid-row: 4;background-color:#9da7fd;}
 .text3{
     color:black;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 2.5em;
     text-align:right;
     padding-top: 1em;
@@ -183,7 +183,7 @@ background-color: #fc7b61;}
 .textcard4{grid-area: 4/4/6/5;background-color:#ffbd37;}
 .text4{
     color:black;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 3em;
     text-align:right;
     padding-top: 18em;
