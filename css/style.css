@@ -4,15 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;900&display=swap');
 html{
     font-family: 'Source Code Pro';
-    background-color: white;
-    border: 0.1em solid black;
 }
+body{background-color: white;
+font-size: 1em;}
 
 .page-header{
     background-color:white;
     border: 0.1em solid black;
     display: grid;
-    grid-template-columns: 10% 60% 20% 10%;
+    grid-template-columns: 10% 55% 25% 10%;
     font: 600 1.5em/1 'Source Code Pro';
     grid-template-rows: 4em;
 }
@@ -27,10 +27,11 @@ html{
   display: relative;
     padding:0.5em 1em;
 } */
-.logo{padding-left:2em;
+.logo{grid-column: 1;
+    padding-left:2em;
     padding-top: 0.5em;
     height:60px;}
-.menu{
+.menu{grid-column: 2;
     display:inline-block;
     padding:1.5em 1.5em 1.5em;
 }
@@ -45,11 +46,13 @@ html{
     display:none;
     background-color: white;
     border:0.1em solid black;
+    padding-bottom: 0.5em;
 }
 .submenu a{
     color:black;
     display:block;
     text-decoration: none;
+    text-align: left;
 }
 .menu:hover .submenu {
    display:block;
@@ -64,10 +67,12 @@ html{
     background-color:none;
 } */
 .search{
+    grid-column: 3;
  display: inline-block;
  padding:1.5em 1.5em 1.5em;
 }
 .your-products{
+    grid-column: 4;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -198,7 +203,6 @@ justify-content: center;}
 }
 
 .page-footer{
-    grid-area: 6/1/6/5;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -218,3 +222,61 @@ justify-content: center;}
 .copyright{
     padding-right: 1em;padding-top: 3em;}
 
+@media screen and (max-width:480px){
+    .page-header{
+    grid-template-columns: 40% 40% 20%;
+    font: 400 1em/1 'Source Code Pro';
+    grid-template-rows: 2em;
+    }
+    .menu{padding:0.5em 1.5em 0.5em;grid-column: 1;}
+    .search{grid-column: 2; padding:0.5em 1.5em 0.5em;}
+    .search button{visibility: hidden;}
+    .logo{visibility: hidden;}
+    .your-products{grid-column: 3;padding-top: 0;}
+    .products{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    overflow: visible;}
+    .textcard1 {visibility: hidden;}
+    .textcard2 {visibility: hidden;}
+    .textcard3 {visibility: hidden;}
+    .textcard4 {visibility: hidden;}
+    .product6{grid-column: 2; grid-row: 2;}
+    .product4{grid-column: 1; grid-row: 3;}
+    .product11{grid-column: 2; grid-row: 4;}
+    .product2{grid-column: 1;grid-row: 6;}
+    .product7{grid-column: 2;grid-row: 6;}
+    .product8{grid-column: 1;grid-row: 7;}
+    .heading{grid-column: 1/3;}
+    .pagination{grid-area: 10/1/10/3;}
+    .social{font-weight: 200;}
+    .social img{visibility: hidden;}
+    .social a{padding:0em 1em 0em;}
+    .copyright{visibility: hidden;}
+}
+@media screen and (max-width:1080px){
+    .page-header{
+        grid-template-columns: 10% 45% 30% 15%;
+        font: 600 1em/1 'Source Code Pro';
+        grid-template-rows: 4em;
+        }
+    .logo{padding-left:1em;
+        padding-top: 0.5em;
+        height:40px;}
+    .menu{padding-top: 1.5em;grid-column: 2;}
+    .search{grid-column: 3; padding-top: 1em;}
+    .search button{visibility: hidden;}
+    .your-products{grid-column: 4;padding-top: 0;}
+    .products{
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: visible;}
+    .textcard1 {visibility: hidden;}
+    .textcard2 {visibility: hidden;}
+    .textcard3 {visibility: hidden;}
+    .textcard4 {visibility: hidden;}
+    .product6{grid-column: 2; grid-row: 2;}
+    .product4{grid-column: 1; grid-row: 3;}
+    .product11{grid-column: 2; grid-row: 4;}
+    .heading{grid-column: 1/4;}
+    .pagination{grid-area: 6/1/6/4;}
+}
