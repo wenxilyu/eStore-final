@@ -92,8 +92,8 @@ text-align: center;
 font-size: large;
 font-weight: bolder;
 border:0.1em solid black;
-background-image: linear-gradient(to bottom right, #9da7fd, #b2e9c4);
-}
+/* background-image: linear-gradient(to bottom right, #9da7fd, #b2e9c4); */
+background-color: #9da7fd;}
 .product1{grid-column: 1;grid-row: 2; background-color: 
     #b2e9c4;
 border:0.1em solid black;}
@@ -155,10 +155,10 @@ justify-content: flex-end;
 .text1{
     color:black;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align:right;
     padding-top: 8em;
-    padding-right: 1em;
+    padding-right: 0.5em;
 }
 
 .textcard2{grid-column: 1; grid-row: 3;
@@ -175,10 +175,10 @@ background-color: #fc7b61;}
 .text3{
     color:black;
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align:right;
     padding-top: 1em;
-    padding-right: 1em;
+    padding-right: 0.5em;
 }
 .textcard4{grid-area: 4/4/6/5;background-color:#ffbd37;}
 .text4{
